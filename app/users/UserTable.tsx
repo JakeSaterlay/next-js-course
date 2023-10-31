@@ -20,8 +20,8 @@ const UserTable = async ({ sortOrder }: Props) => {
     sortOrder === "email" ? (user) => user.email : (user) => user.name
   );
   return (
-    <table className="table table-bordered">
-      <thead>
+    <table className="table table-bordered bg-slate-500 text-white">
+      <thead className="text-white">
         <tr>
           <th>
             <Link href="/users?sortOrder=name">Name</Link>
